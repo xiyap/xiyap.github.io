@@ -1,7 +1,12 @@
+## Introduction
+In this project, I built a portfolio website designed to showcase my projects for public viewing.
+
+This website is constructed using a basic template from HTML5 UP, with personal modifications incorporated to enhance the website.
+
+## Webpage Template
 Massively by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 
 This is Massively, a text-heavy, article-oriented design built around a huge background
 image (with a new parallax implementation I'm testing) and scroll effects (powered by
@@ -16,7 +21,6 @@ you can use for pretty much whatever.
 
 AJ
 aj@lkn.io | @ajlkn
-
 
 Credits:
 
