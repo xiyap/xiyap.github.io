@@ -11,6 +11,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+		<style>
+			.hover-enlarge {
+				position: relative;
+				overflow: hidden;
+			}
+		
+			.hover-enlarge img {
+				transition: transform 0.3s ease-in-out;
+			}
+		
+			.hover-enlarge:hover img {
+				transform: scale(1.1); /* Adjust the scale factor as needed */
+				transform-origin: center center; /* Enlarge from the center */
+			}
+
+			.hidden {
+				display: none;
+			}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -25,8 +47,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="ds_projects.html">Data Science/ML Projects</a></li>
 							<li class="active"><a href="deep_learning_projects.html">Deep Learning Projects</a></li>
+							<li><a href="ds_projects.html">Data Science/ML Projects</a></li>
 							<li><a href="tableau.html">Tableau</a></li>
 							<li><a href="design_engineer.html">Engineering Design</a></li>
 							<li><a href="images/Yap Xian Ian - Resume.pdf" target="_blank" onclick="window.open(this.href + '#zoom=110'); return false;">Resume</a></li>
@@ -42,72 +64,106 @@
 
 						<!-- Featured Post -->
 							<header class="major" style="font-size: 20px; color: rgba(0, 0, 0, 0.8);">
-								Page in progress...
-							</header>
-							<!-- <header class="major" style="font-size: 20px; color: rgba(0, 0, 0, 0.8);">
 								Collection of Deep Learning/Neural Network projects
-							</header> -->
-
-							<!-- <article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+							</header>
+							<header class="major" >
+								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Segmented Object Counting Pipeline<br />
+									(YOLOv8 + OOP + OpenCV)</h3>
+								<section id="video-section">
+									<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
+									<video width="65%" height="auto" controls controlsList="nodownload" poster="images/deep_learning_projects/traffic_footage_multi_object_lane_pred - initial frame.jpg">
+									<source src="images/deep_learning_projects/traffic_footage_multi_object_lane_pred.mp4" type="video/mp4">
+									</video>
+								</section>
+								<p style="font-size: 17px;">► Developed flexible multi-object/region tracking and counting solution with YOLO integration. (OOP)<br />
+									► Comprehensive class structure facilitates straightforward customization of tracking parameters and UI elements.<br />
+									► Seamless integration of YOLO-based object detection models.<br />
+									► Reusable across different projects and applications.
+								</p>
 								<ul class="actions special">
-									<li><a href="#" class="button">Full Story</a></li>
+									<li><a href="https://github.com/xiyap/Flexible_Object_Tracking_Counting_YOLO_Integration_OOP/blob/main/Flexible%20Object%20Tracking%20and%20Counting%20Solution%20with%20YOLO%20Integration%20(OOP).ipynb" class="button small">View Project</a></li>
 								</ul>
-							</article> -->
+							</header>
+							<header class="major" >
+								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Malaysia Road Object Detection<br />
+									(Custom Dataset Labeling + Training)</h3>
+								<section id="video-section1">
+									<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
+									<video width="65%" height="auto" controls controlsList="nodownload" poster="images/deep_learning_projects/kl_2015_8n_t7 - initial frame.jpg">
+									<source src="images/deep_learning_projects/kl_2015_8n_t7.mp4" type="video/mp4">
+									</video>
+								</section>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-3"><a href="images/deep_learning_projects/labelImg2.JPG" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/labelImg2_display.jpg" alt="" /></span></a></div>
+									<div class="col-3" style="position: absolute; visibility: hidden;"><a href="images/deep_learning_projects/accident_scene_8n_t7.jpg" data-lightbox="image-set-1"><span class="image fit hover-enlarge"></span></a></div>
+									<div class="col-3"><a href="images/deep_learning_projects/malaysia_traffic_back_view_8n_t7.jpeg" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/malaysia_traffic_back_view_8n_t7.jpeg" alt="" /></span></a></div>
+									<div class="col-3"><a href="images/deep_learning_projects/irl_model_comparison.jpg" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/irl_model_comparison_display.jpg" alt="" /></span></a></div>
+									<div class="col-3"><a href="images/deep_learning_projects/irl_model_comparison_2.jpg" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/irl_model_comparison_2_display.jpg" alt="" /></span></a></div>
+								</div>
+								<p style="font-size: 17px;">► Constructed road obstacle detection system tailored to Malaysian road obstacles.<br />
+									► Labeled and utilized custom dataset comprising images of road obstacles in Malaysia for model training.<br />
+									► Custom trained model has <strong>15.7%</strong> higher precision than base model.
+								</p>
+								<ul class="actions special">
+									<li><a href="https://github.com/xiyap/Malaysia_Road_Obstacle_Detection_CustomYOLOv8/blob/main/Malaysia%20Road%20Obstacle%20Detection%20-%20Custom%20Dataset%20%2B%20YOLOv8.ipynb" class="button small">View Project</a></li>
+								</ul>
+							</header>
 
 						<!-- Posts -->
-							<!-- <section class="posts">
+							<section class="posts">
 								<article>
 									<header>
-										<h3 style="color: rgba(0, 0, 0, 0.8);">Object detection (camera detect object) vs Image recognition (show cat image, is it cat or not)<br />
-										(yolov8 + openCV)</h3>
+										<h3 style="color: rgba(0, 0, 0, 0.8);">Pneumonia X-Ray Classification<br />
+											(Custom CNN + Transfer Learning)</h3>
 									</header>
-									<a class="image fit"><img src="images/ds_projects/health_insurance.jpg" alt="" /></a>
-									<p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div><a href="images/deep_learning_projects/pneumonia_x_ray.JPG" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/pneumonia_x_ray.JPG" alt="" /></span></a></div>
+									<p style="font-size: 15px;">► Created an image classification model to detect signs of pneumonia from chest X-ray images.<br />
+										► Leveraged transfer learning on InceptionResNetV2 model to achieve <strong>93.9%</strong> accuracy on detection with <strong>99%</strong> recall on pneumonia predictions.
+									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/xiyap/DS_Projects/blob/main/Insurance%20Charges%20Prediction%20-%20EDA%20%2B%20ML%20Regression.ipynb" class="button small">View Project</a></li>
+										<li><a href="https://github.com/xiyap/Pneumonia_CNN_TransferLearning/blob/main/Chest%20X-Ray%20Pneumonia%20Classification%20-%20Custom%20CNN%20%2B%20Transfer%20Learning.ipynb" class="button small">View Project</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h3 style="color: rgba(0, 0, 0, 0.8);">Pneumonia custom CNN + transfer learning<br />
-										(CNN)</h3>
+										<h3 style="color: rgba(0, 0, 0, 0.8);">Insurance Charges Prediction<br />
+											(Neural Network + Tensorflow)</h3>
 									</header>
-									<a class="image fit"><img src="images/ds_projects/income_evaluation.jpg" alt="" /></a>
-									<p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<!-- <a class="image fit"><img src="images/deep_learning_projects/health_insurance_nn.jpg" alt="" /></a> -->
+									<div><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/health_insurance_nn.jpg" alt="" /></span></div>
+									<p style="font-size: 15px;">► Continuation of a past project which can be found <a href="ds_projects.html" style="text-decoration: none;"><strong>HERE</strong></a>.<br />
+										► Utilized neural network to improve model prediction performance.
+									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/xiyap/DS_Projects/blob/main/Income%20Evaluation%20Prediction%20-%20EDA%20%2B%20ML%20Classification.ipynb" class="button small">View Project</a></li>
+										<li><a href="https://github.com/xiyap/Insurance_Charges_NN/blob/main/Insurance%20Charges%20Prediction%20-%20Neural%20Network.ipynb" class="button small">View Project</a></li>
+										<li><a href="https://github.com/xiyap/Insurance_Charges_Regression/blob/main/Insurance%20Charges%20Prediction%20-%20EDA%20%2B%20ML%20Regression.ipynb" class="button small">Traditional ML Approach</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h3 style="color: rgba(0, 0, 0, 0.8);">Country & Region Similarity<br />
-										(tensorflow computer vision)</h3>
+										<h3 style="color: rgba(0, 0, 0, 0.8);">Unified Vehicle Counting System<br />
+											(YOLOv8 + OpenCV)</h3>
 									</header>
-									<a class="image fit"><img src="images/ds_projects/world_clustering.jpg" alt="" /></a>
-									<p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<section id="video-section2">
+										<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
+										<video width="100%" height="auto" controls controlsList="nodownload" poster="images/deep_learning_projects/4K_road_traffic_turning_(static)_30s_pred - initial frame.jpg">
+										<source src="images/deep_learning_projects/4K_road_traffic_turning_(static)_30s_pred.mp4" type="video/mp4">
+										</video>
+									</section>
+									<p style="font-size: 15px;">► Created a vehicle counting system which aggregates counting of all types of vehicles in designated lanes.<br />
+										► The model disregards detection on insignificant vehicles.
+									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/xiyap/DS_Projects/blob/main/Country%20%26%20Region%20Similarity%20-%20ML%20Clustering.ipynb" class="button small">View Project</a></li>
+										<li><a href="https://github.com/xiyap/Vehicle_Tracker_Counter_YOLOv8/blob/main/Vehicle%20Tracker%20%26%20Counter%20-%20Object%20Detection%20%2B%20YOLOv8%20%2B%20Custom%20BBox.ipynb" class="button small">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									<header>
-										<h3 style="color: rgba(0, 0, 0, 0.8);">insuracne regression<br />
-										(NN regression tensorflow)</h3>
-									</header>
-									<a class="image fit"><img src="images/ds_projects/olympic_games.jpg" alt="" /></a>
-									<p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<br /><br /><br /><br /><br />
 									<ul class="actions special">
-										<li><a href="https://github.com/xiyap/DS_Projects/blob/main/Olympic%20History%20Stats%20-%20SQL%20%2B%20EDA.ipynb" class="button small">View Project</a></li>
+										<li><a href="https://github.com/xiyap/DL_Projects" class="button small">View All Projects</a></li>
 									</ul>
 								</article>
-							</section> -->
+							</section>
 
 					</div>
 
@@ -138,6 +194,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 	</body>
 </html>
