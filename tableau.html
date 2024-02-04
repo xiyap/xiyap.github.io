@@ -42,6 +42,36 @@
             	transform: scale(1.57); /* Adjust the scale factor as needed */
             	transform-origin: center center;
         	}
+
+			/* Style the circle */
+			#scrollToTopButton {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(0, 0, 0); /* Change the color of the circle */
+				color: rgb(255, 255, 255); /* Change the color of the icon */
+				transition: background-color 0.3s ease; /* Add transition for smooth effect */
+			}
+
+			/* Style the icon */
+			#scrollToTopButton i {
+				font-size: 20px; /* Adjust the size of the icon */
+				color: inherit; /* Inherit color from the parent element */
+			}
+
+			/* Hover effect */
+			#scrollToTopButton:hover {
+				background-color: rgba(81, 206, 243); /* Change the background color on hover */
+			}
+
+			/* Change icon color on hover with easing */
+			#scrollToTopButton:hover i {
+				color: rgb(255, 255, 255); /* Change the color of the icon on hover */
+				transition: color 0.3s ease; /* Add easing to the color change */
+			}
 		</style>
 
 	</head>
@@ -76,16 +106,16 @@
 						<!-- Featured Post -->
 							<header class="major" style="font-size: 20px; color: rgba(0, 0, 0, 0.8);">
 								Collection of data visualization and dashboarding projects <br />
-								View the projects to interact with project elements and explore various dashboard/storyboard pages
+								<span style="font-size: 14px; font-weight: bold;">View projects to interact with project elements and explore various dashboard/storyboard pages</span>
 							</header>
 							<header class="major" >
 								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Netflix Dataset</h3>
 								<div class="image main" style="max-width: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto; padding: 0;">
 									<a href="images/tableau/Netflix_dash1.JPG" data-lightbox="image-set-1"><span class="image fit hover-enlarge-featured"><img src="images/tableau/Netflix_2_cropped.JPG" alt="" /></span></a>
 								</div>
-								<p style="font-size: 17px;">► Interactive dashboard collection utilizing Netflix datasets, providing stakeholders on company stock trend and general data.<br />
-									► Each page focuses on specific metrics, KPIs or area of interest, creating a cohesive set of visualizations for decision-makers to navigate.<br />
-									► Story board provides analysis on stock price, strategic recommendations on priority factors and relevant metrics to track to foster growth of the company.</p>
+								<p style="font-size: 17px;">► <b>Interactive dashboard collection</b> utilizing Netflix datasets, providing stakeholders on company stock trend and general data.<br />
+									► Each page focuses on specific <b>metrics, KPIs or area of interest</b>, creating a cohesive set of visualizations for decision-makers to navigate.<br />
+									► <b>Story board</b> provides analysis on stock price, strategic recommendations on priority factors and relevant metrics to track to foster growth of the company.</p>
 								<ul class="actions special">
 									<li><a href="https://public.tableau.com/views/NetflixDataDashboard_17025654184630/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="button small">View Dashboards</a></li>
 									<li><a href="https://public.tableau.com/views/NetflixDashboard_16977856041150/Story1?:language=en-US&:display_count=n&:origin=viz_share_link" class="button small">View Story Board</a></li>
@@ -97,11 +127,11 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">TFL Bus Safety<br />
-										(Dashboard)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Dashboard)</span></h3>
 									</header>
 									<!-- <a class="image fit"><img src="images/tableau/TFL_dash.JPG" alt="" /></a> -->
 									<div><a href="images/tableau/TFL_dash.JPG" data-lightbox="image-set-2"><span class="image fit hover-enlarge"><img src="images/tableau/TFL_dash.JPG" alt="" /></span></a></div>
-									<p style="font-size: 15px;">► Interactive dashboard showcasing London bus incidents by borough from January 2015 to September 2018.
+									<p style="font-size: 15px;">► <b>Interactive dashboard</b> showcasing London bus incidents by borough from January 2015 to September 2018.
 										<br />► How to use:
 										<br />1. Select a borough from the list on the left
 										<br />2. Graph and charts on the right will reflect the borough selected.</p>
@@ -112,11 +142,11 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Airbnb US 2016 Data<br />
-										(Dashboard)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Dashboard)</span></h3>
 									</header>
 									<div><a href="images/tableau/Airbnb_dash.JPG" data-lightbox="image-set-3"><span class="image fit hover-enlarge"><img src="images/tableau/Airbnb_dash.JPG" alt="" /></span></a></div>
-									<p style="font-size: 15px;">► Interactive dashboard breaking down Airbnb listings in Seattle, Washington (US), for the year 2016.
-										<br />► Dashboard encompasses key metrics like revenue throughout the year, price per zipcode, average price per bedroom and detailed count of distinct bedroom listings.</p>
+									<p style="font-size: 15px;">► <b>Interactive dashboard</b> breaking down Airbnb listings in Seattle, Washington (US), for the year 2016.
+										<br />► Dashboard encompasses <b>key metrics</b> like revenue throughout the year, price per zipcode, average price per bedroom and detailed count of distinct bedroom listings.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/views/AirBnB2016USData/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="button small">View Dashboard</a></li>
 									</ul>
@@ -124,11 +154,11 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Video Games Sales<br />
-										(Dashboard)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Dashboard)</span></h3>
 									</header>
 									<div><a href="images/tableau/GameSales_dash.JPG" data-lightbox="image-set-4"><span class="image fit hover-enlarge"><img src="images/tableau/GameSales_dash.JPG" alt="" /></span></a></div>
-									<p style="font-size: 15px;">► Interactive dashboard analyzing sales data of video games surpassing 100,000 sales.
-										<br />► Dashboard features dynamic filtering system, allowing users to explore and dissect data based on gaming platforms and genres.</p>
+									<p style="font-size: 15px;">► <b>Interactive dashboard</b> analyzing sales data of video games surpassing 100,000 sales.
+										<br />► Dashboard features <b>dynamic filtering system</b>, allowing users to explore and dissect data based on gaming platforms and genres.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/views/TableauTutorialforBeginnersYT-AlexTheAnalyst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="button small">View Dashboard</a></li>
 									</ul>
@@ -136,11 +166,11 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Super Store Sales<br />
-										(Story Board)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Story Board)</span></h3>
 									</header>
 									<div><a href="images/tableau/SuperStore_storyboard.JPG" data-lightbox="image-set-5"><span class="image fit hover-enlarge"><img src="images/tableau/SuperStore_storyboard.JPG" alt="" /></span></a></div>
-									<p style="font-size: 15px;">► Story board analysis delving into patterns of losses on customer accounts.
-										<br />► Designed to allow stakeholders to engage with the data on a deeper level by leveraging hover and click functionalities on the dashboard elements.</p>
+									<p style="font-size: 15px;">► <b>Story board analysis</b> delving into patterns of losses on customer accounts.
+										<br />► Designed to allow stakeholders to engage with the data on a deeper level by leveraging <b>hover and click functionalities</b> on the dashboard elements.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/views/SuperStoreStory_16937112758460/PatternofLosses?:language=en-US&:display_count=n&:origin=viz_share_link" class="button small">View Story Board</a></li>
 									</ul>
@@ -149,7 +179,7 @@
 
 							<div class="box alt">
 								<header class="major" >
-									<p style="font-size: 17px;">Visualizations with various filtering and slicing options which helps users obtain the data required</p>
+									<p style="font-size: 17px;">Visualizations with various <b>filtering and slicing</b> options which helps users obtain the data required</p>
 								<div class="row gtr-50 gtr-uniform">
 									<div class="col-4"><a href="images/tableau/Netflix_dash2.JPG" data-lightbox="image-set-6"><span class="image fit hover-enlarge"><img src="images/tableau/Netflix_dash2.JPG" alt="" /></span></a></div>
 									<div class="col-4"><a href="images/tableau/Netflix_dash3.JPG" data-lightbox="image-set-6"><span class="image fit hover-enlarge"><img src="images/tableau/Netflix_dash3.JPG" alt="" /></span></a></div>
@@ -169,6 +199,11 @@
 								</header>		
 								
 							</div>
+
+							<ul class="actions special">
+								<li><a href="#" id="scrollToTopButton"><i class="fas fa-arrow-up"></i></a></li>
+							</ul>
+
 					</div>
 
 				<!-- Footer -->
@@ -200,6 +235,20 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var scrollToTopButton = document.getElementById('scrollToTopButton');
+					
+					scrollToTopButton.addEventListener('click', function(e) {
+						e.preventDefault();
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+				});
+			</script>
 			
 	</body>
 </html>

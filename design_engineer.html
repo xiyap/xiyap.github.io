@@ -27,6 +27,36 @@
             	transform: scale(1.1); /* Adjust the scale factor as needed */
             	transform-origin: center center;
         	}
+
+			/* Style the circle */
+			#scrollToTopButton {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(0, 0, 0); /* Change the color of the circle */
+				color: rgb(255, 255, 255); /* Change the color of the icon */
+				transition: background-color 0.3s ease; /* Add transition for smooth effect */
+			}
+
+			/* Style the icon */
+			#scrollToTopButton i {
+				font-size: 20px; /* Adjust the size of the icon */
+				color: inherit; /* Inherit color from the parent element */
+			}
+
+			/* Hover effect */
+			#scrollToTopButton:hover {
+				background-color: rgba(81, 206, 243); /* Change the background color on hover */
+			}
+
+			/* Change icon color on hover with easing */
+			#scrollToTopButton:hover i {
+				color: rgb(255, 255, 255); /* Change the color of the icon on hover */
+				transition: color 0.3s ease; /* Add easing to the color change */
+			}
 		</style>
 
 	</head>
@@ -67,10 +97,10 @@
 								<div class="image main" style="max-width: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto; padding: 0;">
 									<a><span class="image fit hover-enlarge-featured"><img src="images/design_engineer/oscm.png" alt="" /></span></a>
 								</div>
-								<p style="font-size: 17px;">► Conceptualized, designed and fabricated a full-scale prototype machine, which minimises human interaction and increases product output.
-									<br />► The project presents an opportunity gain of RM7.7 million annually per factory, with ROI of 2.6 months post-implementation.
-									<br />► Led a team of engineers and workers in project fabrication, implementation and improvement.
-									<br />► First of its kind in automating its function with patent filing approval (PI2023003018).
+								<p style="font-size: 17px;">► <b>Conceptualized, designed and fabricated a full-scale prototype machine</b>, which minimises human interaction and increases product output.
+									<br />► The project presents an opportunity gain of <b>RM7.7 million annually per factory</b>, with <b>ROI of 2.6 months</b> post-implementation.
+									<br />► <b>Led a team of engineers and workers</b> in project fabrication, implementation and improvement.
+									<br />► First of its kind in automating its function with <b>patent filing approval (PI2023003018)</b>.
 								</p>
 							</header>
 
@@ -86,8 +116,8 @@
 										  <source src="images/design_engineer/product animation (volume down).mp4" type="video/mp4">
 										</video>
 									</section>
-									<p style="font-size: 15px;">► Developed product showcase animations to effectively communicate and showcase conceptual design to stakeholders.
-										<br />► The animations provide stakeholders with a realistic look of a concept during presentations, ensuring comprehensive understanding of the design.
+									<p style="font-size: 15px;">► <b>Developed product showcase animations</b> to effectively communicate and showcase conceptual design to stakeholders.
+										<br />► The animations provide stakeholders with a <b>realistic look of a concept</b> during presentations, ensuring comprehensive understanding of the design.
 									</p>
 								</article>
 								<article>
@@ -100,8 +130,8 @@
 										  <source src="images/design_engineer/Solidworks Training TG (10s) - Mosaic.mp4" type="video/mp4">
 										</video>
 									</section>
-									<p style="font-size: 15px;">► Conducted SolidWorks training and provided best practices for fabrication and 3D printing to a crowd of 90, primarily targeting factory personnel.
-										<br />► The initiative aims to alleviate workload on the engineering team which improves productivity and efficiency within the department.
+									<p style="font-size: 15px;">► <b>Conducted SolidWorks training</b> and provided best practices for fabrication and 3D printing to a <b>crowd of 90</b>, primarily targeting factory personnel.
+										<br />► The initiative aims to <b>alleviate workload on the engineering team</b> which improves productivity and efficiency within the department.
 									</p>
 								</article>
 								<article>
@@ -109,9 +139,9 @@
 										<h3 style="color: rgba(0, 0, 0, 0.8);">QC Jig</h3>
 									</header>
 									<a class="image fit"><img src="images/design_engineer/sorting_jig.jpg" alt="" /></a>
-									<p style="font-size: 15px;">► Set standards to machine component used across all factories by studying and pinpoint crucial data and criteria required to mitigate product defect and customer complaints.
-										<br />► Formulated guidelines to follow and new data points to collect for engineers and QA/QC personnel for data collection.
-										<br />► Leveraged data collected within an automated Excel framework to design a QC jig for machine component and implement QA/QC standards across the assembly pipeline.
+									<p style="font-size: 15px;">► <b>Set standards to machine component</b> used across all factories by studying and pinpoint crucial data and criteria required to mitigate product defect and customer complaints.
+										<br />► <b>Formulated guidelines</b> to follow and new data points to collect for engineers and QA/QC personnel for data collection.
+										<br />► <b>Leveraged data collected</b> within an automated Excel framework to design a QC jig for machine component and implement QA/QC standards across the assembly pipeline.
 									</p>
 								</article>
 								<article>
@@ -119,11 +149,15 @@
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Design Improvement</h3>
 									</header>
 									<a class="image fit"><img src="images/design_engineer/fm.jpg" alt="" /></a>
-									<p style="font-size: 15px;">► Enhanced the design of facemask production machine through a strategic simplification approach.
+									<p style="font-size: 15px;">► <b>Enhanced the design</b> of facemask production machine through a strategic simplification approach.
 										<br />► Improved product quality, minimized machine downtime and reduced maintenance costs.
 									</p>
 								</article>
 							</section>
+
+							<ul class="actions special">
+								<li><a href="#" id="scrollToTopButton"><i class="fas fa-arrow-up"></i></a></li>
+							</ul>
 
 					</div>
 
@@ -154,6 +188,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var scrollToTopButton = document.getElementById('scrollToTopButton');
+					
+					scrollToTopButton.addEventListener('click', function(e) {
+						e.preventDefault();
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+				});
+			</script>
 
 	</body>
 </html>

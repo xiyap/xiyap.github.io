@@ -32,6 +32,36 @@
 				display: none;
 			}
 
+			/* Style the circle */
+			#scrollToTopButton {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(0, 0, 0); /* Change the color of the circle */
+				color: rgb(255, 255, 255); /* Change the color of the icon */
+				transition: background-color 0.3s ease; /* Add transition for smooth effect */
+			}
+
+			/* Style the icon */
+			#scrollToTopButton i {
+				font-size: 20px; /* Adjust the size of the icon */
+				color: inherit; /* Inherit color from the parent element */
+			}
+
+			/* Hover effect */
+			#scrollToTopButton:hover {
+				background-color: rgba(81, 206, 243); /* Change the background color on hover */
+			}
+
+			/* Change icon color on hover with easing */
+			#scrollToTopButton:hover i {
+				color: rgb(255, 255, 255); /* Change the color of the icon on hover */
+				transition: color 0.3s ease; /* Add easing to the color change */
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -64,20 +94,20 @@
 
 						<!-- Featured Post -->
 							<header class="major" style="font-size: 20px; color: rgba(0, 0, 0, 0.8);">
-								Collection of Deep Learning/Neural Network projects
+								Collection of Deep Learning, Neural Network & Computer Vision projects
 							</header>
 							<header class="major" >
-								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Segmented Object Counting Pipeline<br />
-									(YOLOv8 + OOP + OpenCV)</h3>
+								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Segregated Object Counting Pipeline<br />
+									<span style="font-size: 24px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Object Detection + Tracking + Counting)</span></h3>
 								<section id="video-section">
 									<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
 									<video width="65%" height="auto" controls controlsList="nodownload" poster="images/deep_learning_projects/traffic_footage_multi_object_lane_pred - initial frame.jpg">
 									<source src="images/deep_learning_projects/traffic_footage_multi_object_lane_pred.mp4" type="video/mp4">
 									</video>
 								</section>
-								<p style="font-size: 17px;">► Developed flexible multi-object/region tracking and counting solution with YOLO integration. (OOP)<br />
+								<p style="font-size: 17px;">► Developed flexible multi-object/region tracking and counting solution with YOLO integration. <b>(OOP)</b><br />
 									► Comprehensive class structure facilitates straightforward customization of tracking parameters and UI elements.<br />
-									► Seamless integration of YOLO-based object detection models.<br />
+									► Seamless integration of <b>YOLO-based</b> object detection models.<br />
 									► Reusable across different projects and applications.
 								</p>
 								<ul class="actions special">
@@ -85,8 +115,8 @@
 								</ul>
 							</header>
 							<header class="major" >
-								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Malaysia Road Object Detection<br />
-									(Custom Dataset Labeling + Training)</h3>
+								<h3 style="font-size: 30px; color: rgba(0, 0, 0, 0.8);">Malaysia Road Obstacle Detection<br />
+									<span style="font-size: 24px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Custom Dataset Labeling + Training)</span></h3>
 								<section id="video-section1">
 									<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
 									<video width="65%" height="auto" controls controlsList="nodownload" poster="images/deep_learning_projects/kl_2015_8n_t7 - initial frame.jpg">
@@ -101,8 +131,8 @@
 									<div class="col-3"><a href="images/deep_learning_projects/irl_model_comparison_2.jpg" data-lightbox="image-set-1"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/irl_model_comparison_2_display.jpg" alt="" /></span></a></div>
 								</div>
 								<p style="font-size: 17px;">► Constructed road obstacle detection system tailored to Malaysian road obstacles.<br />
-									► Labeled and utilized custom dataset comprising images of road obstacles in Malaysia for model training.<br />
-									► Custom trained model has <strong>15.7%</strong> higher precision than base model.
+									► Labeled and utilized <b>custom dataset</b> comprising images of road obstacles in Malaysia for model training.<br />
+									► Custom trained model has <b>15.7% higher</b> precision than base model.
 								</p>
 								<ul class="actions special">
 									<li><a href="https://github.com/xiyap/Malaysia_Road_Obstacle_Detection_CustomYOLOv8/blob/main/Malaysia%20Road%20Obstacle%20Detection%20-%20Custom%20Dataset%20%2B%20YOLOv8.ipynb" class="button small">View Project</a></li>
@@ -113,12 +143,12 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h3 style="color: rgba(0, 0, 0, 0.8);">Pneumonia X-Ray Classification<br />
-											(Custom CNN + Transfer Learning)</h3>
+										<h3 style="color: rgba(0, 0, 0, 0.8);">Pneumonia X-Ray Classifier<br />
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Image Classification)</span></h3>
 									</header>
 									<div><a href="images/deep_learning_projects/pneumonia_x_ray.JPG" data-lightbox="image-set-2"><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/pneumonia_x_ray.JPG" alt="" /></span></a></div>
-									<p style="font-size: 15px;">► Created an image classification model to detect signs of pneumonia from chest X-ray images.<br />
-										► Leveraged transfer learning on InceptionResNetV2 model to achieve <strong>93.9%</strong> accuracy on detection with <strong>99%</strong> recall on pneumonia predictions.
+									<p style="font-size: 15px;">► Created a <b>custom CNN image classification model</b> to detect signs of pneumonia from chest X-ray images.<br />
+										► Leveraged <b>transfer learning</b> on InceptionResNetV2 model to achieve <b>93.9%</b> accuracy on detection with <b>99%</b> recall on pneumonia predictions.
 									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/xiyap/Pneumonia_CNN_TransferLearning/blob/main/Chest%20X-Ray%20Pneumonia%20Classification%20-%20Custom%20CNN%20%2B%20Transfer%20Learning.ipynb" class="button small">View Project</a></li>
@@ -127,11 +157,11 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Insurance Charges Prediction<br />
-											(Neural Network + Tensorflow)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(Tensorflow Regression)</span></h3>
 									</header>
 									<div><span class="image fit hover-enlarge"><img src="images/deep_learning_projects/health_insurance_nn.jpg" alt="" /></span></div>
-									<p style="font-size: 15px;">► Continuation of a past project which can be found <a href="ds_projects.html" style="text-decoration: none;"><strong>HERE</strong></a>.<br />
-										► Utilized neural network to improve model prediction performance.
+									<p style="font-size: 15px;">► Continuation of a past project which can be found <a href="ds_projects.html" style="text-decoration: none;"><b>HERE</b></a>.<br />
+										► Utilized <b>neural network</b> to improve model prediction performance.
 									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/xiyap/Insurance_Charges_NN/blob/main/Insurance%20Charges%20Prediction%20-%20Neural%20Network.ipynb" class="button small">View Project</a></li>
@@ -141,7 +171,7 @@
 								<article>
 									<header>
 										<h3 style="color: rgba(0, 0, 0, 0.8);">Unified Vehicle Counting System<br />
-											(YOLOv8 + OpenCV)</h3>
+											<span style="font-size: 20px; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">(YOLOv8 + OpenCV)</span></h3>
 									</header>
 									<section id="video-section2">
 										<!-- Embed the MP4 video with auto-adjust width and centered on the page -->
@@ -163,6 +193,10 @@
 									</ul>
 								</article>
 							</section>
+							
+							<ul class="actions special">
+								<li><a href="#" id="scrollToTopButton"><i class="fas fa-arrow-up"></i></a></li>
+							</ul>							
 
 					</div>
 
@@ -195,6 +229,20 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var scrollToTopButton = document.getElementById('scrollToTopButton');
+					
+					scrollToTopButton.addEventListener('click', function(e) {
+						e.preventDefault();
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth'
+						});
+					});
+				});
+			</script>
 
 	</body>
 </html>
