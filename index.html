@@ -31,6 +31,21 @@
 				transform-origin: center center; /* Enlarge from the center */
 			}
 
+			.hover-enlarge-featured {
+            	position: relative;
+            	/* overflow: visible; Allow the image to overflow its parent */
+            	overflow: hidden;
+        	}
+
+        	.hover-enlarge-featured img {
+				transition: transform 0.5s ease-in-out;
+        	}
+
+        	.hover-enlarge-featured:hover img {
+            	transform: scale(1.1); /* Adjust the scale factor as needed */
+            	transform-origin: center center;
+        	}
+
 			.hidden {
 				display: none;
 			}
